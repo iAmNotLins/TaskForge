@@ -205,24 +205,3 @@ O volume nomeado **taskforge_data** persiste o banco de dados SQLite fora do con
 
 ---
 
-# 🐋 Docker Hub
-
-A imagem está disponível publicamente no Docker Hub.
-
----
-
-## Baixar a imagem
-
-    docker pull iamnotlins/taskforge:latest
-
----
-
-## Rebuild e publicação de nova versão
-
-    docker build --no-cache -t taskforge:v2 .
-
-    docker tag taskforge:v2 iamnotlins/taskforge:v2
-    docker tag taskforge:v2 iamnotlins/taskforge:latest
-
-    docker push iamnotlins/taskforge:v2
-    docker push iamnotlins/taskforge:latest
