@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+instance/
+taskforge.db
+.env
+.vscode/
+.git
+.gitignore
+.DS_Store
