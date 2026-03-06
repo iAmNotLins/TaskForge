@@ -1,0 +1,12 @@
+services:
+  taskforge:
+    image: iamnotlins/taskforge:v1
+    container_name: taskforge
+    ports:
+      - "5000:5000"
+    volumes:
+      - taskforge_data:/app/instance
+    restart: unless-stopped
+
+volumes:
+  taskforge_data:
