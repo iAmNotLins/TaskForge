@@ -1,17 +1,18 @@
-FROM python:3.12.12-slim
+FROM python:3.14.3-alpine3.23
+
+RUN apk upgrade --no-cache
 
 WORKDIR /app
 
-COPY requirements.txt .
+RUN addgroup -S appgroup && \
+    adduser -S -G appgroup -h /app -s /sbin/nologin appuser
 
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
-
-RUN groupadd -r appgroup && \
-    useradd -r -g appgroup -d /app -s /bin/false appuser
+COPY --chown=appuser:appgroup requirements.txt .
+RUN pip install --upgrade pip --no-cache-dir -r requirements.txt
 
 COPY --chown=appuser:appgroup . .
+
+USER appuser
 
 EXPOSE 5000
 

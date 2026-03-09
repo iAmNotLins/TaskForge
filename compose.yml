@@ -1,6 +1,6 @@
 services:
   taskforge:
-    image: iamnotlins/taskforge:v1
+    image: iamnotlins/taskforge:v3
     container_name: taskforge
     ports:
       - "5000:5000"
