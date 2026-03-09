@@ -211,6 +211,6 @@ Próximas features:
     git clone https://github.com/iamnotlins/taskforge.git &&
     cd taskforge &&
     docker compose up -d &&
-    curl http://localhost:5000
+    curl http://localhost:5000/health
 
 ---
