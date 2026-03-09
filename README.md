@@ -205,13 +205,6 @@ Próximas features:
 
 ---
 
-# 📚 Documentação Completa
-
-- Release v3 Notes
-- Security Hardening
-- Cosign Setup
-
----
 
 # 🚀 Quick Start (1 comando)
 
@@ -221,5 +214,3 @@ Próximas features:
     curl http://localhost:5000
 
 ---
-
-# TaskForge v3 — Secure by Default 🛡️
